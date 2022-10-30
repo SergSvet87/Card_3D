@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="keywords"
+      content="html, css, javascript, svitlychnyi, serhii"
+    />
+    <meta
+      name="description"
+      content="Це сайт- ."
+    />
+    <meta
+      name="author"
+      content="Світличний Сергій"
+    />
+
+    <title>Картка товару 3D</title>
+
+    <!-- Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/style.min.css"
+    />
+    <script
+      src="js/main.js"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="home">
+        <!-- <img class="home__img" src="img/dish.jpg" alt=""> -->
+        <!-- <video class="home__video" src="img/main/" autoplay loop muted></video> -->
+
+        <div class="container home__container">
+          <!-- Header -->
+          <header class="home__header header">
+            <nav class="header__top-menu menu-header">
+              <div class="header__logo">
+                <a
+                  class="header__logo-img"
+                  href="#"
+                >
+                  <img
+                    src="img/logo.png"
+                    alt="Logo"
+                    width="60"
+                    height="60"
+                  />
+                </a>
+              </div>
+              <!-- ./logo -->
+
+              <ul class="menu-header__list">
+                <li class="menu-header__item active">
+                  <a href="index.html">Головна</a>
+                </li>
+
+                <li class="menu-header__item">
+                  <a href="#cards">Картки</a>
+                </li>
+
+                <li class="menu-header__item">
+                  <a href="#footer">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- ./nav -->
+          </header>
+          <!-- ./header -->
+
+          <!-- Mobile menu -->
+          <header class="header__menu-mobile mobile-menu">
+            <div class="mobile-menu__inner">
+              <div class="header__logo">
+                <a href="index.html">
+                  <img
+                    src="img/logo.png"
+                    alt="Logo"
+                  />
+                </a>
+              </div>
+              <!-- ./logo -->
+              <a class="mobile-menu__burger"
+                ><span class="mobile-menu__line"></span
+              ></a>
+            </div>
+
+            <nav class="mobile-menu__nav">
+              <!-- List -->
+              <ul class="mobile-menu__list list-mobile">
+                <li class="list-mobile__item">
+                  <a
+                    class="list-mobile__link"
+                    href="index.html"
+                    ><i class="material-icons">hail</i>Головна</a
+                  >
+                </li>
+                <li class="list-mobile__item">
+                  <a
+                    class="list-mobile__link"
+                    href="#cards"
+                    ><i class="material-icons">star_half</i>Картки</a
+                  >
+                </li>
+                <li class="list-mobile__item">
+                  <a
+                    class="list-mobile__link"
+                    href="#footer"
+                    ><i class="material-icons">music_note</i>Контакти</a
+                  >
+                </li>
+                <li class="list-mobile__item"><div class="divider"></div></li>
+                <li class="list-mobile__item mobile-menu__close">
+                  <a
+                    class="list-mobile__link"
+                    href="#"
+                    ><i class="material-icons">cancel</i>Закрити</a
+                  >
+                </li>
+              </ul>
+              <!-- ./mobile-menu__list -->
+            </nav>
+            <!-- /.mobile-menu__nav -->
+
+            <div class="mobile-menu__overlay"></div>
+            <!-- /.mobile-menu__overlay -->
+          </header>
+          <!-- ./mobile-menu -->
+        </div>
+        <!-- /.container -->
+      </section>
+
+      <!-- Main -->
+      <main class="page">
+        <section
+          class="cards"
+          id="cards"
+        >
+          <div class="container cards__container">
+            <h2 class="cards__title title-h2">LET´S GO</h2>
+
+            <ul class="cards__grid">
+              <li class="cards__item card">
+                <div class="card__front">
+                  <img
+                    src="img/card_image.jpg"
+                    alt="card image"
+                    class="card__img"
+                    width="340"
+                    height="300"
+                  />
+                  <div class="card__description">
+                    <h4 class="card__title title-h4">Lorem ipsum</h4>
+                    <!-- /.card__title -->
+                    <p class="card__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing...
+                    </p>
+                    <!-- /.card__text -->
+                  </div>
+                  <!-- /.card__description -->
+                </div>
+                <!-- /.card__front -->
+
+                <div class="card__back">
+                  <h4 class="card__title title-h4">Це зворотня сторона</h4>
+                </div>
+                <!-- /.card__back -->
+              </li>
+              <!-- /.cards__item card -->
+            </ul>
+            <!-- /.cards__grid -->
+          </div>
+        </section>
+      </main>
+      <!-- /.main page -->
+
+      <!-- Footer -->
+      <footer
+        id="footer"
+        class="footer"
+      >
+        <div class="container footer__container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8">
+              <!-- Social -->
+              <ul class="footer__social social-list">
+                <li class="social-item">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BhcBiHBFlT5yVayJn2EHCdQ%3D%3D"
+                    class="social-link"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./linkedin -->
+
+                <li class="social-item">
+                  <a
+                    href="https://t.me/Serg_svet"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#telegram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./telegram -->
+
+                <li class="social-item">
+                  <a
+                    href="mailto:svitlychnyi1905@gmail.com"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#gmail"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./gmail -->
+
+                <li class="social-item">
+                  <a
+                    href="https://github.com/SergSvet87"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#github"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./github -->
+
+                <li class="social-item">
+                  <a
+                    href="viber://chat?number=%2B380976157541"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#viber"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./viber -->
+
+                <li class="social-item">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+380976157541"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#whatsapp"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./whatsapp -->
+
+                <li class="social-item">
+                  <a
+                    href="https://stackoverflow.com/users/20042762/serhii-svitlychnyi"
+                    target="_blank"
+                    class="social-link"
+                    ><svg
+                      width="30"
+                      height="30"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#stackoverflow"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./stackoverflow -->
+
+                <li class="social-item">
+                  <a
+                    href="https://www.facebook.com/s.svetlichnyy/"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <svg
+                      width="38"
+                      height="38"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./facebook -->
+
+                <li class="social-item">
+                  <a
+                    href="Skype:https://join.skype.com/invite/CBnR8fF6vKfj"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                    >
+                      <use
+                        xlink:href="img/icons/socials/sprite-socials.svg#skype"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- ./skype -->
+              </ul>
+              <!-- ./social -->
+            </div>
+            <!-- /.col-xl-5 -->
+
+            <!-- Animation -->
+            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-4">
+              <div class="footer__animation animation">
+                <a
+                  href="https://sergsvet87.github.io/My_RESUME/"
+                  class="animation__link"
+                  target="_blank"
+                >
+                  <svg
+                    class="animation__circle"
+                    width="100"
+                    height="100"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 54 54"
+                    style="enable-background: new 0 0 54 54"
+                    xml:space="preserve"
+                    fill="#d7d7d7"
+                  >
+                    <g>
+                      <path
+                        id="circleShape"
+                        class="circle__shape"
+                        d="M27,0C12.112,0,0,12.112,0,27s12.112,27,27,27s27-12.112,27-27S41.888,0,27,0z M27,52C13.215,52,2,40.785,2,27
+                S13.215,2,27,2s25,11.215,25,25S40.785,52,27,52z"
+                        fill="none"
+                      />
+                      <!---->
+                      <path
+                        class="animation__arrow"
+                        transform="scale(0.6)"
+                        d="M32.413,14.293c-0.391-0.391-1.023-0.391-1.414,0L19.501,25.791c-0.667,0.667-0.667,1.751,0,2.418l11.498,11.498
+                C31.194,39.902,31.45,40,31.706,40s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L21.12,27l11.293-11.293
+                C32.804,15.316,32.804,14.684,32.413,14.293z"
+                        fill="#fff"
+                      />
+                    </g>
+                    <text class="animation__text">
+                      <textPath href="#circleShape">Сергій Світличний</textPath>
+                    </text>
+                  </svg>
+                </a>
+              </div>
+              <!-- /.footer__animation -->
+            </div>
+            <!-- /.col-xl-2 -->
+
+            <!-- Copyright -->
+            <div class="col-xl-5 col-lg-12">
+              <div class="footer__copyright">
+                &copy; Copyright
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="material-icons">favorite</i> in
+                <address class="footer__address">
+                  <a
+                    href="https://sergsvet87.github.io/My_Portfolio/"
+                    target="_blank"
+                  >
+                    Ukraine, Kharkiv</a
+                  >
+                </address>
+              </div>
+              <!-- ./footer-text -->
+            </div>
+            <!-- /.col-xl-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </footer>
+      <!-- ./footer -->
+    </div>
+    <!--end wrapper-->
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
