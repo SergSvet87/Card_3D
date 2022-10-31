@@ -1,0 +1,16 @@
+/*---------------------
+  Home
+-----------------------*/
+
+.home {
+  min-height: $height-home;
+  background-color: $c-primary;
+
+  &__header {
+    background-color: $c-primary;
+
+    @media only screen and (max-width: $mq-sm) {
+      display: none;
+    }
+  }
+}

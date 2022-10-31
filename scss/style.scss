@@ -1,0 +1,21 @@
+/*---------------------
+  Main styles
+-----------------------*/
+
+// Скидання стилів
+// @import "normalize";
+// @import "reset";
+
+// Основні змінні для всього сайту
+@import "fonts";
+@import "variables";
+@import "general";
+@import "mixins";
+
+// Блоки на сторінці
+@import "home";
+@import "header-desktop";
+@import "header-mobile";
+@import "cards";
+@import "footer";
+

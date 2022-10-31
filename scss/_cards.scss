@@ -1,0 +1,109 @@
+/*---------------------
+  Card
+-----------------------*/
+
+.cards {
+  position: relative;
+  padding: 100px 0;
+  border: none;
+  overflow: hidden;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    @media only screen and (max-width: $mq-xxs) {
+      font-size: 48px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    justify-content: center;
+    // grid-template-columns: repeat(3, 1 fr);
+
+    // @media only screen and (max-width: $mq-lg) {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
+
+    // @media only screen and (max-width: $mq-md) {
+    //   grid-template-columns: repeat(1, 1fr);
+    // }
+  }
+
+  &__item {
+    width: 340px;
+    height: 530px;
+    border: none;
+
+    @media only screen and (max-width: $mq-xs) {
+      width: 300px;
+    }
+
+    @media only screen and (max-width: $mq-xxs) {
+      width: 230px;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  box-shadow: 0px 30px 30px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: box-shadow 0.7s linear;
+
+  &__front,
+  &__back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.9s linear;
+  }
+
+  &__front {
+    transform: perspective(600px) rotateY(0deg);
+    background-color: $c-card;
+  }
+
+  &__back {
+    @include flex(center, center);
+    transform: perspective(600px) rotateY(180deg);
+    background-color: $c-card-back;
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    margin: 0 15px;
+    text-align: left;
+    color: $c-white;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:hover > .card__front {
+    transform: perspective(600px) rotateY(-180deg);
+  }
+
+  &:hover > .card__back {
+    transform: perspective(600px) rotateY(0deg);
+  }
+
+  &__text {
+    @media only screen and (max-width: $mq-xxs) {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+/*---------------------
+  Header Desktop
+-----------------------*/
+
+.menu-header {
+  @include flex(space-between, center);
+
+  &__list {
+    list-style: none;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline-block;
+
+    a {
+      padding: 30px 35px;
+      font-size: 18px;
+      text-transform: uppercase;
+      border-bottom: 5px solid transparent;
+
+      &:hover {
+        color: $c-card;
+        border-bottom: 5px solid $c-card;
+      }
+
+      @media only screen and (max-width: $mq-md) {
+        padding: 30px 15px;
+        margin: auto;
+      }
+    }
+
+    &.active {
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+}
